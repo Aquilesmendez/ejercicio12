@@ -29,11 +29,11 @@ public class SecondActivity extends AppCompatActivity {
 
         // Crear una lista de platos
         List<Dish> dishList = new ArrayList<>();
-        dishList.add(new Dish("La Hamburgueseria", R.drawable.hamburguesa, "Dirección 1",2000));
-        dishList.add(new Dish("Pizza Steve", R.drawable.pizza, "Dirección 2",2000));
-        dishList.add(new Dish("Sushi Moto", R.drawable.sushi, "Dirección 3",2000));
-        dishList.add(new Dish("Cesar Ensalada", R.drawable.ensalada, "Dirección 4",2000));
-        dishList.add(new Dish("Pasta al Dente", R.drawable.pasta, "Dirección 5",2000));
+        dishList.add(new Dish("La Hamburgueseria", R.drawable.hamburguesa, "Los Almendros 4444", "Ranchero", "9500"));
+        dishList.add(new Dish("Pizza Steve", R.drawable.pizza, "Los Cedros 2222", "4 Estaciones", "14000"));
+        dishList.add(new Dish("Sushi Moto", R.drawable.sushi, "jupiter 5555", "hebi roll", "4500"));
+        dishList.add(new Dish("Cesar Ensalada", R.drawable.ensalada, "Los Poetas 456", "Ensalaa Julio", "8000"));
+        dishList.add(new Dish("Pasta al Dente", R.drawable.pasta, "avenida cinco 7845", "Fontanna", "14000"));
 
         // Crear el adaptador personalizado
         dishAdapter = new ArrayAdapter<Dish>(this, R.layout.list_item_dish, dishList) {
@@ -47,9 +47,14 @@ public class SecondActivity extends AppCompatActivity {
 
                 TextView nameTextView = convertView.findViewById(R.id.nameTextView);
                 ImageView imageView = convertView.findViewById(R.id.imageView);
+                TextView menuTextView = convertView.findViewById(R.id.menuTextView);
+                TextView priceTextView = convertView.findViewById(R.id.priceTextView);
 
                 nameTextView.setText(dish.getName());
                 imageView.setImageResource(dish.getImageResId());
+                menuTextView.setText(dish.getMenu());
+                priceTextView.setText(dish.getPrice());
+
 
                 return convertView;
             }
