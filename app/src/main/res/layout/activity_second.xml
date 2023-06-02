@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:text="Restaurantes"
         android:textColor="@color/black"
+        android:background="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
