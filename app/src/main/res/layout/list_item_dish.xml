@@ -9,7 +9,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:background="@color/white"
+        >
 
         <ImageView
             android:id="@+id/imageView"
@@ -25,7 +27,9 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginTop="8dp"
-            tools:text="Local" />
+            tools:text="Local"
+            android:textColor="@color/black"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,7 +44,9 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginTop="8dp"
-                tools:text="ENSALsA" />
+                tools:text="ENSALsA"
+                android:textColor="@color/black"
+                />
 
             <TextView
                 android:id="@+id/priceTextView"
@@ -50,7 +56,9 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginTop="8dp"
-                tools:text="2000" />
+                tools:text="2000"
+                android:textColor="@color/black"
+                />
         </LinearLayout>
 
     </LinearLayout>
